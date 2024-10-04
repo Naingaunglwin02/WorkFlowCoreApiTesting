@@ -1,0 +1,25 @@
+{
+  "Id": "ProcessPaymentWorkflow",
+  "Version": 1,
+  "Steps": [
+    {
+      "Id": "Initialize",
+      "StepType": "WorkFlowCoreApiTesting.ProcessPayment.Steps.Initialize, WorkFlowCoreApiTesting",
+      "NextStepId": "ApplyShipping"
+    },
+    {
+      "Id": "ApplyDiscount",
+      "StepType": "WorkFlowCoreApiTesting.ProcessPayment.Steps.ApplyDiscount, WorkFlowCoreApiTesting",
+      "NextStepId": "Finalize"
+    },
+    {
+      "Id": "ApplyShipping",
+      "StepType": "WorkFlowCoreApiTesting.ProcessPayment.Steps.ApplyShipping, WorkFlowCoreApiTesting",
+      "NextStepId": "ApplyDiscount"
+    },
+    {
+      "Id": "Finalize",
+      "StepType": "WorkFlowCoreApiTesting.ProcessPayment.Steps.Finalize, WorkFlowCoreApiTesting"
+    }
+  ]
+}

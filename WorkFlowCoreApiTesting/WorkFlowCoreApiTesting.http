@@ -1,0 +1,6 @@
+@WorkFlowCoreApiTesting_HostAddress = http://localhost:5143
+
+GET {{WorkFlowCoreApiTesting_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
